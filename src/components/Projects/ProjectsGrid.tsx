@@ -12,7 +12,7 @@ export const ProjectsGrid: React.FC<ProjectsGridProps> = ({
                                                               title = "Mes Projets"
                                                           }) => {
     return (
-        <section className="py-16 px-4 bg-gray-50">
+        <section id="projects" className="py-16 px-4 bg-gray-50">
             <div className="max-w-6xl mx-auto">
                 {/* Titre de la section */}
                 <div className="text-center mb-12">
@@ -40,38 +40,37 @@ export const ProjectsGrid: React.FC<ProjectsGridProps> = ({
     );
 };
 
+
 // Données d'exemple
 export const sampleProjects: Project[] = [
     {
         id: "1",
         title: "Harmony Havoc",
         description: "Un jeux-vidéo de rythme intégrant des aspects de Stratégie/RPG (Projet encore en devellopement)",
-        imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        imageUrl: "/src/assets/images/EIP_Poster.png",
         githubUrl: "https://github.com/Baptiste-lg/EIP.git",
         technologies: ["Unity ", "WWise ", "C#"]
     },
     {
         id: "2",
-        title: "Task Management App",
-        description: "Application de gestion de tâches collaborative avec authentification, notifications en temps réel et synchronisation multi-appareils. Interface drag & drop intuitive.",
+        title: "AREA",
+        description: "Le projet AREA consiste en la création d’une suite logicielle qui fonctionne de manière similaire à IFTTT et/ou Zapier. (automatisation entre service)\n" +
+            "Cette suite logicielle est divisée en 3 parties :\n" +
+            "\n" +
+            "Un serveur pour implémenter toutes les fonctionnalités.\n" +
+            "Une application web pour utiliser l’application depuis un navigateur.\n" +
+            "Une application mobile pour utiliser l’application depuis un téléphone.",
         imageUrl: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         githubUrl: "https://github.com/username/task-manager",
-        technologies: ["React", "Node.js", "Socket.io", "MongoDB"]
+        technologies: ["React ", "TypeScripts ", " API"],
     },
     {
         id: "3",
-        title: "Weather Dashboard",
-        description: "Dashboard météo interactif avec prévisions détaillées, cartes interactives et alertes personnalisées. Intégration d'APIs météo multiples pour une précision optimale.",
+        title: "COMPUTER NUMERICAL ANALYSIS",
+        description: "Divert project: graphique annalyse, cryptography,\n" +
+            "réseau neuronal",
         imageUrl: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         githubUrl: "https://github.com/username/weather-dashboard",
-        technologies: ["Vue.js", "Chart.js", "OpenWeather API", "Mapbox"]
+        technologies: ["C++ ", "Python "],
     },
-    {
-        id: "4",
-        title: "Portfolio Personnel",
-        description: "Portfolio moderne et responsive showcasing mes projets et compétences. Animations fluides, mode sombre/clair et optimisé pour le SEO et les performances.",
-        imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        githubUrl: "https://github.com/username/portfolio",
-        technologies: ["Next.js", "TypeScript", "Framer Motion", "MDX"]
-    }
 ];

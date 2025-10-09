@@ -5,9 +5,10 @@ import { Experience } from './components/Experience/Experience';
 import { MyContact } from './components/Contact/MyContact';
 import type {   PersonalInfo, Experience as ExperienceType, ContactInfo} from './types';
 import {ProjectsGrid, sampleProjects} from "./components/Projects/ProjectsGrid.tsx";
+import './styles/portfolio.css';
 
 const mockPersonalInfo: PersonalInfo = {
-    name: "Titien Carllas",
+    name: "Titien Carellas",
     title: "Développeur Full Stack",
     bio: "Passionné par le développement web moderne...",
     skills: ["C/C++/C#\t", "TypeScript\t", "Python\t", "Unity/Unreal Engine\t"]
@@ -37,7 +38,7 @@ const App: React.FC = () => {
     return (
         <div className="App min-h-screen bg-white">
             <Navigation />
-            <main>
+            <main className="flex flex-col items-center">
                 <MySelf personalInfo={mockPersonalInfo} />
                 <Experience experiences={mockExperiences} />
                 <ProjectsGrid projects={sampleProjects} title="Mes Projets Récents" />

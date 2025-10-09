@@ -1,0 +1,370 @@
+/* Styles globaux pour le centrage */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.App {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation */
+.navigation {
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.navigation li {
+    margin: 0;
+}
+
+.navigation button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.navigation button:hover {
+    background-color: #646cff;
+    transform: translateY(-2px);
+}
+
+/* Sections communes */
+.section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(to right, #646cff, #535bf2);
+    border-radius: 2px;
+}
+
+/* MySelf Section */
+.personal-info {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 2rem;
+    border: 4px solid #646cff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.personal-info h3 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.personal-info h4 {
+    font-size: 1.3rem;
+    color: #646cff;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.personal-info p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+/* Skills */
+.skills {
+    margin-top: 2rem;
+}
+
+.skills h5 {
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills li {
+    background-color: #f0f0f0;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+.skills li:hover {
+    background-color: #646cff;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Experience Section */
+.experiences-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+}
+
+.experience-item h4 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.experience-item h5 {
+    font-size: 1.1rem;
+    color: #646cff;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.experience-item .duration {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 1rem;
+    padding: 0.3rem 0.8rem;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+}
+
+.experience-item p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tech-tag {
+    background-color: #e8f0fe;
+    color: #1967d2;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateX(4px);
+}
+
+.contact-item strong {
+    color: #1a1a1a;
+    min-width: 100px;
+    text-align: right;
+}
+
+.contact-item a {
+    color: #646cff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #535bf2;
+    text-decoration: underline;
+}
+
+.contact-item span {
+    color: #666;
+}
+
+/* Projects Section */
+#projects {
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: #f9fafb;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Titres et descriptions des projets - S'assurer qu'ils sont visibles */
+.bg-white.rounded-xl {
+    background-color: white !important;
+}
+
+.text-xl.font-bold.text-gray-800 {
+    color: #1a1a1a !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 0.75rem !important;
+}
+
+.text-gray-600.text-sm {
+    color: #666 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Centrer les images dans les cartes de projets */
+.relative.h-48 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.relative.h-48 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Style pour les cartes de projets */
+.grid.grid-cols-1 {
+    display: grid;
+    gap: 2rem;
+}
+
+/* Assurer que le texte est visible */
+.p-6 h3,
+.p-6 p {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section {
+        padding: 3rem 1rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .navigation ul {
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .navigation button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .personal-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .personal-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-item strong {
+        min-width: auto;
+        text-align: center;
+    }
+}

@@ -8,8 +8,23 @@ interface ProjectCardProps {
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     return (
         <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+            {/* Titre avant l'image */}
+            <div className="p-6 pb-0" style={{ backgroundColor: 'white' }}>
+                <h3
+                    style={{
+                        fontSize: '1.25rem',
+                        fontWeight: 'bold',
+                        color: '#1a1a1a',
+                        marginBottom: '0.75rem',
+                        lineHeight: '1.4'
+                    }}
+                >
+                    {project.title}
+                </h3>
+            </div>
+
             {/* Image du projet */}
-            <div className="relative h-48 overflow-hidden bg-gray-100">
+            <div className="relative h-48 overflow-hidden bg-gray-100" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <img
                     src={project.imageUrl}
                     alt={project.title}
@@ -18,21 +33,23 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                         width: '100%',
                         height: '100%',
                         objectFit: 'cover',
-                        objectPosition: '50% 50%'
+                        objectPosition: 'center center'
                     }}
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 hover:opacity-100 transition-opacity duration-300" />
             </div>
 
             {/* Contenu de la carte */}
-            <div className="p-6">
-                {/* Titre */}
-                <h3 className="text-xl font-bold text-gray-800 mb-3">
-                    {project.title}
-                </h3>
+            <div className="p-6" style={{ backgroundColor: 'white' }}>
 
                 {/* Description */}
-                <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                <p style={{
+                    color: '#666',
+                    fontSize: '0.95rem',
+                    lineHeight: '1.6',
+                    marginBottom: '1rem',
+                    minHeight: '4.5rem'
+                }}>
                     {project.description}
                 </p>
 
@@ -44,8 +61,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                                 key={index}
                                 className="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full"
                             >
-                {tech}
-              </span>
+                                {tech}
+                            </span>
                         ))}
                     </div>
                 )}
@@ -60,8 +77,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     Voir sur GitHub
                     <svg
                         className="ml-2"
-                        width="24"
-                        height="24"
+                        width="20"
+                        height="20"
                         fill="currentColor"
                         viewBox="0 0 16 16"
                     >
