@@ -14,7 +14,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     style={{
                         fontSize: '1.25rem',
                         fontWeight: 'bold',
-                        color: '#1a1a1a',
+                        color: '#ffffffde',
                         marginBottom: '0.75rem',
                         lineHeight: '1.4'
                     }}

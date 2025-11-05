@@ -16,10 +16,10 @@ export const Navigation: React.FC = () => {
                     <button onClick={() => scrollToSection('experience')}>Experience</button>
                 </li>
                 <li>
-                    <button onClick={() => scrollToSection('projects')}>My Projects</button>
+                    <button onClick={() => scrollToSection('projects')}>Projects</button>
                 </li>
                 <li>
-                    <button onClick={() => scrollToSection('contact')}>My Contact</button>
+                    <button onClick={() => scrollToSection('contact')}>Contact</button>
                 </li>
             </ul>
         </nav>

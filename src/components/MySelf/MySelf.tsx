@@ -8,7 +8,7 @@ interface MySelfProps {
 export const MySelf: React.FC<MySelfProps> = ({ personalInfo }) => {
     return (
         <section id="myself" className="section">
-            <h2>About Me</h2>
+            <h2>My self</h2>
             <div className="personal-info">
                 {personalInfo.avatar && (
                     <img src={personalInfo.avatar} alt={personalInfo.name} className="avatar" />
