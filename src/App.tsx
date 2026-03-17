@@ -38,12 +38,12 @@ const mockExperiences: ExperienceType[] = [
         company: " JSM INFORMATIQUE",
         position: "Développeur Reseaux",
         duration: "Août 2022 - Décembre 2022",
-        description: "Automatisation et gestion des réseaux et appareils" +
+        description: "Automatisation et gestion des réseaux et appareils " +
                     "informatiques d’entreprise. \n" +
                     "Mise en place et intégration ticket client. \n" +
                     "Gestion de ticket de demande client.",
 
-    technologies: ["Bash \t", "AZURE AD (Pack Office administrateur)\t", "NINJA ONE (RMM)"]
+        technologies: ["Bash \t", "AZURE AD (Pack Office administrateur)\t", "NINJA ONE (RMM)"]
     }
 
 ];

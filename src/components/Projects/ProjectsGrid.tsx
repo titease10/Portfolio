@@ -42,7 +42,7 @@ export const sampleProjects: Project[] = [
     {
         id: "1",
         title: "Harmony Havoc",
-        description: "Un jeux-vidéo de rythme intégrant des aspects de Stratégie/RPG (Projet encore en devellopement)",
+        description: "Un jeux-vidéo de rythme intégrant des aspects de Stratégie/RPG (Projet encore en développement)",
         imageUrl: Poster_EIP,
         githubUrl: "https://github.com/Baptiste-lg/EIP.git",
         technologies: ["Unity ", "WWise ", "C#"]
