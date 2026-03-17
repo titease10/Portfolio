@@ -22,7 +22,30 @@ const mockExperiences: ExperienceType[] = [
         duration: "2020 - Présent",
         description: "Développement de Projet divers",
         technologies: ["C/C++/C#\t", "TypeScript\t", "Python\t", "Unity/Unreal Engine\t"]
+    },
+    {
+        id : "2",
+        company: "Icare Energie",
+        position: "Développeur IA",
+        duration: "Fevrier 2024 - Juin 2024",
+        description: "Idéation et prototypage d’un projet IA visant à relever des\n" +
+            "anomalies dans la consommation énergétique\n" +
+            "d’entreprise afin de baisser leur empreinte carbone.\n",
+        technologies: ["Python\t", "C/C++\t", "TypeScript\t"]
+    },
+    {
+        id : "3",
+        company: " JSM INFORMATIQUE",
+        position: "Développeur Reseaux",
+        duration: "Août 2022 - Décembre 2022",
+        description: "Automatisation et gestion des réseaux et appareils" +
+                    "informatiques d’entreprise. \n" +
+                    "Mise en place et intégration ticket client. \n" +
+                    "Gestion de ticket de demande client.",
+
+    technologies: ["Bash \t", "AZURE AD (Pack Office administrateur)\t", "NINJA ONE (RMM)"]
     }
+
 ];
 
 

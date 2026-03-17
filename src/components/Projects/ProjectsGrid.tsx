@@ -1,7 +1,8 @@
 import React from 'react';
 import type {Project} from '../../types/Project';
 import { ProjectCard } from './ProjectCard';
-
+import Poster_EIP from "../../assets/images/EIP_Poster.png";
+import AREA_IFTTT from "../../assets/images/AREA_IFTTT.png"
 interface ProjectsGridProps {
     projects: Project[];
     title?: string;
@@ -42,7 +43,7 @@ export const sampleProjects: Project[] = [
         id: "1",
         title: "Harmony Havoc",
         description: "Un jeux-vidéo de rythme intégrant des aspects de Stratégie/RPG (Projet encore en devellopement)",
-        imageUrl: "/src/assets/images/EIP_Poster.png",
+        imageUrl: Poster_EIP,
         githubUrl: "https://github.com/Baptiste-lg/EIP.git",
         technologies: ["Unity ", "WWise ", "C#"]
     },
@@ -55,7 +56,7 @@ export const sampleProjects: Project[] = [
             "Un serveur pour implémenter toutes les fonctionnalités.\n" +
             "Une application web pour utiliser l’application depuis un navigateur.\n" +
             "Une application mobile pour utiliser l’application depuis un téléphone.",
-        imageUrl: "/src/assets/images/AREA_IFTTT.png",
+        imageUrl: AREA_IFTTT,
         githubUrl: "https://github.com/EpitechPromo2026/B-DEV-500-PAR-5-2-area-sofiane.bassaler",
         technologies: ["React ", "TypeScripts ", " API"],
     },
