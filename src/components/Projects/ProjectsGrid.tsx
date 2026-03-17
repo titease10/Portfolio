@@ -55,7 +55,7 @@ export const sampleProjects: Project[] = [
             "Un serveur pour implémenter toutes les fonctionnalités.\n" +
             "Une application web pour utiliser l’application depuis un navigateur.\n" +
             "Une application mobile pour utiliser l’application depuis un téléphone.",
-        imageUrl: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        imageUrl: "/src/assets/images/AREA_IFTTT.png",
         githubUrl: "https://github.com/EpitechPromo2026/B-DEV-500-PAR-5-2-area-sofiane.bassaler",
         technologies: ["React ", "TypeScripts ", " API"],
     },
