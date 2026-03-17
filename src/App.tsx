@@ -10,7 +10,10 @@ import './styles/portfolio.css';
 const mockPersonalInfo: PersonalInfo = {
     name: "Titien Carellas",
     title: "Développeur Full Stack",
-    bio: "Passionné par le développement web moderne...",
+    bio: "Développeur polyvalent avec une expertise en C/C++ et C#, j'allie la rigueur de la formation Epitech à ma passion pour le jeu vidéo mobile." +
+        "\nMon parcours est jalonné de projets divers — applications web, moteurs de jeu et algorithmes mathématiques — " +
+        "ainsi que de compétitions type Hackathons et Jams." +
+        "\nCette curiosité technique me permet aujourd'hui d'intervenir sur des problématiques variées avec une vision globale du développement",
     skills: ["C/C++/C#\t", "TypeScript\t", "Python\t", "Unity/Unreal Engine\t"]
 };
 

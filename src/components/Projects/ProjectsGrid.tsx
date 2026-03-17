@@ -68,8 +68,8 @@ export const sampleProjects: Project[] = [
         description: "Divert project: graphique annalyse, cryptography,\n" +
             "réseau neuronal",
         imageUrl: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        githubUrl: "https://github.com/username/weather-dashboard",
-        canvaUrl: "https://www.canva.com/design/DAHBeo2Haqs/mnhLkwSwm9sFPDgrbPE_ug/edit?utm_content=DAHBeo2Haqs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+        githubUrl: "https://github.com/EpitechPromo2026/B-CNA-500-PAR-5-1-cryptography-titien.carellas",
+        canvaUrl: "https://www.canva.com/design/DAF2miEDsi4/1XzxwJsGbC1TjdnuqazrGg/edit?utm_content=DAF2miEDsi4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
         technologies: ["C++ ", "Python "],
     },
 ];
