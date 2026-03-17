@@ -45,6 +45,7 @@ export const sampleProjects: Project[] = [
         description: "Un jeux-vidéo de rythme intégrant des aspects de Stratégie/RPG (Projet encore en développement)",
         imageUrl: Poster_EIP,
         githubUrl: "https://github.com/Baptiste-lg/EIP.git",
+        canvaUrl: "https://www.canva.com/design/DAHBeo2Haqs/mnhLkwSwm9sFPDgrbPE_ug/edit?utm_content=DAHBeo2Haqs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
         technologies: ["Unity ", "WWise ", "C#"]
     },
     {
@@ -58,6 +59,7 @@ export const sampleProjects: Project[] = [
             "Une application mobile pour utiliser l’application depuis un téléphone.",
         imageUrl: AREA_IFTTT,
         githubUrl: "https://github.com/EpitechPromo2026/B-DEV-500-PAR-5-2-area-sofiane.bassaler",
+        canvaUrl: "https://www.canva.com/design/DAF2Du8N1kY/foIMZq1TpGyJsu5xWcmqtQ/edit?utm_content=DAF2Du8N1kY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
         technologies: ["React ", "TypeScripts ", " API"],
     },
     {
@@ -67,6 +69,7 @@ export const sampleProjects: Project[] = [
             "réseau neuronal",
         imageUrl: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         githubUrl: "https://github.com/username/weather-dashboard",
+        canvaUrl: "https://www.canva.com/design/DAHBeo2Haqs/mnhLkwSwm9sFPDgrbPE_ug/edit?utm_content=DAHBeo2Haqs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
         technologies: ["C++ ", "Python "],
     },
 ];

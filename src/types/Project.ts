@@ -4,5 +4,6 @@ export interface Project {
     description: string;
     imageUrl: string;
     githubUrl: string;
+    canvaUrl: string;
     technologies?: string[];
 }
