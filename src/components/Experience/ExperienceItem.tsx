@@ -9,7 +9,15 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({ experience }) =>
     return (
         <div className="experience-item">
             <h4>{experience.position}</h4>
-            <h5>{experience.company}</h5>
+            <h5>
+                <a
+                    href={experience.companyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {experience.company}
+                </a>
+            </h5>
             <span className="duration">{experience.duration}</span>
             <p>{experience.description}</p>
             <div className="technologies">

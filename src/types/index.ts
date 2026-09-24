@@ -9,20 +9,11 @@ export interface PersonalInfo {
 export interface Experience {
     id: string;
     company: string;
+    companyUrl?: string;
     position: string;
     duration: string;
     description: string;
     technologies: string[];
-}
-
-export interface Project {
-    id: string;
-    title: string;
-    description: string;
-    technologies: string[];
-    githubUrl?: string;
-    liveUrl?: string;
-    imageUrl?: string;
 }
 
 export interface ContactInfo {
