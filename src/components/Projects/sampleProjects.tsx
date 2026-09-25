@@ -6,20 +6,28 @@ import Machine_Learning from "../../assets/images/Machine_Learning.png";
 
 export const sampleProjects: Project[] = [
     {
-        id: "1",
+        id: "Harmony Havoc",
         title: "Harmony Havoc",
-        description: "Un jeux-vidéo de rythme intégrant des aspects de Stratégie/RPG. Le Jeu est actuellement disponible sur itch.io",
+        description: "Un jeux-vidéo de rythme intégrant des aspects de Stratégie/RPG. \n" +
+            "\n" +
+            "Ce jeu s’adresse à tous les joueurs recherchant une expérience alliant réflexes et tactiques.\n" +
+            "\n" +
+            "Vous incarnez une divinité dans un monde en 3D où l’environnement et l’action réagissent aux pulsations de la musique. Le principe est simple : enchaîner les commandes de rythme pour créer des combinaisons musicales puissantes. Ils vous permettent d’invoquer des unités, de lancer des sorts dévastateurs ou d’utiliser des armes uniques. \n" +
+            "\n" +
+            "Détruisez les bâtiments ennemis et affrontez des boss épiques à travers les niveaux pour faire évoluer votre arsenal.\n" +
+            "\n" +
+            "Le Jeu est actuellement disponible sur itch.io.",
         imageUrl: Poster_EIP,
         githubUrl: "https://harmonyhavoc.itch.io/harmonyhavoc",
         canvaUrl: "https://canva.link/p6zvkrnmyd5fa2h",
         technologies: ["Unity ", "WWise ", "C#"]
     },
     {
-        id: "2",
+        id: "AREA",
         title: "AREA",
         description: "Le projet AREA consiste en la création d’une suite logicielle qui fonctionne de manière similaire à IFTTT et/ou Zapier. (automatisation entre service)\n" +
-            "Cette suite logicielle est divisée en 3 parties :\n" +
             "\n" +
+            "Cette suite logicielle est divisée en 3 parties :\n" +
             "Un serveur pour implémenter toutes les fonctionnalités.\n" +
             "Une application web pour utiliser l’application depuis un navigateur.\n" +
             "Une application mobile pour utiliser l’application depuis un téléphone.",
@@ -29,7 +37,7 @@ export const sampleProjects: Project[] = [
         technologies: ["React ", "TypeScripts ", " API"],
     },
     {
-        id: "3",
+        id: "COMPUTER NUMERICAL ANALYSIS",
         title: "COMPUTER NUMERICAL ANALYSIS",
         description: "Divert project: graphique annalyse, cryptography,\n" +
             "réseau neuronal",
@@ -39,7 +47,7 @@ export const sampleProjects: Project[] = [
         technologies: ["C++ ", "Python "],
     },
     {
-        id: "4",
+        id: "MACHINE LEARNING",
         title: "MACHINE LEARNING",
         description: "creation du divert model d'IA : Classification , Regression, Clustering\n",
         imageUrl: Machine_Learning,

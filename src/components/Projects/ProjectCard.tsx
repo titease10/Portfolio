@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import type {Project} from '../../types/Project';
+import type { Project } from '../../types/Project';
 
 interface ProjectCardProps {
     project: Project;
@@ -9,8 +9,12 @@ interface ProjectCardProps {
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     return (
         <div className="project-item">
-            {/* Zone cliquable qui mène à la page détail du projet */}
-            <Link to={`/projects/${project.id}`} className="project-item-link">
+
+            {/* Toute la zone principale de la carte est cliquable */}
+            <Link
+                to={`/projects/${project.id}`}
+                className="project-item-link"
+            >
                 {project.imageUrl && (
                     <div className="project-image">
                         <img
@@ -21,18 +25,23 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 )}
 
                 <h4>{project.title}</h4>
+
                 <p>{project.description}</p>
 
                 {project.technologies && project.technologies.length > 0 && (
                     <div className="technologies">
                         {project.technologies.map((tech, index) => (
-                            <span key={index} className="tech-tag">{tech.trim()}</span>
+                            <span key={index} className="tech-tag">
+                    {tech.trim()}
+                </span>
                         ))}
                     </div>
                 )}
+
+                <div className="project-card-spacer" />
             </Link>
 
-            {/* Liens externes du projet, en dehors du lien vers la page détail */}
+            {/* Boutons externes */}
             <div className="project-links">
                 {project.githubUrl && (
                     <a
