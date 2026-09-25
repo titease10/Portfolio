@@ -26,7 +26,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
                 <h4>{project.title}</h4>
 
-                <p>{project.description}</p>
+                <p>{project.description.split('\n\n')[0]}</p>
 
                 {project.technologies && project.technologies.length > 0 && (
                     <div className="technologies">
