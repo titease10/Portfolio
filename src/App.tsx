@@ -8,6 +8,7 @@ import type {   PersonalInfo, Experience as ExperienceType, ContactInfo} from '.
 import {ProjectsGrid} from "./components/Projects/ProjectsGrid.tsx";
 import {sampleProjects} from "./components/Projects/sampleProjects.tsx";
 import './styles/portfolio.css';
+import {ProjectDetail} from "./components/Projects/ProjectDetail.tsx";
 
 const mockPersonalInfo: PersonalInfo = {
     name: "Titien Carellas",
@@ -103,6 +104,7 @@ const App: React.FC = () => {
                     <Route path="/" element={<MySelf personalInfo={mockPersonalInfo} />} />
                     <Route path="/experience" element={<Experience experiences={mockExperiences} />} />
                     <Route path="/projects" element={<ProjectsGrid projects={sampleProjects} title="Mes Projets Récents" />} />
+                    <Route path="/projects/:id" element={<ProjectDetail projects={sampleProjects} />} />
                     <Route path="/contact" element={<MyContact contactInfo={mockContactInfo} />} />
                 </Routes>
             </main>
