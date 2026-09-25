@@ -38,7 +38,30 @@ body {
     margin: 0;
 }
 
-.navigation button {
+.navigation a {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.navigation a:hover {
+    background-color: #646cff;
+    transform: translateY(-2px);
+}
+
+.navigation a.active {
+    background-color: #646cff;
+    font-weight: 600;
+}
+
+/*.navigation button {
     background-color: transparent;
     color: white;
     border: none;
@@ -52,7 +75,7 @@ body {
 .navigation button:hover {
     background-color: #646cff;
     transform: translateY(-2px);
-}
+} */
 
 /* Sections communes */
 .section {
@@ -402,10 +425,22 @@ body {
         padding: 0 1rem;
     }
 
-    .navigation button {
+    .navigation a {
+        display: inline-block;
+        background-color: transparent;
+        color: white;
+        text-decoration: none;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 1rem;
+        border-radius: 4px;
+    }
+    /*.navigation button {
         font-size: 0.9rem;
         padding: 0.4rem 0.8rem;
-    }
+    }*/
 
     .personal-info h3 {
         font-size: 1.5rem;

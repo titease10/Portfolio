@@ -1,25 +1,21 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export const Navigation: React.FC = () => {
-    const scrollToSection = (sectionId: string) => {
-        const element = document.getElementById(sectionId);
-        element?.scrollIntoView({ behavior: 'smooth' });
-    };
-
     return (
         <nav className="navigation">
             <ul>
                 <li>
-                    <button onClick={() => scrollToSection('myself')}>À propos de moi</button>
+                    <NavLink to="/" end>My Self</NavLink>
                 </li>
                 <li>
-                    <button onClick={() => scrollToSection('experience')}>Experience</button>
+                    <NavLink to="/experience">Experience</NavLink>
                 </li>
                 <li>
-                    <button onClick={() => scrollToSection('projects')}>Projects</button>
+                    <NavLink to="/projects">Projects</NavLink>
                 </li>
                 <li>
-                    <button onClick={() => scrollToSection('contact')}>Contact</button>
+                    <NavLink to="/contact">Contact</NavLink>
                 </li>
             </ul>
         </nav>

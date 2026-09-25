@@ -1,4 +1,5 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { Navigation } from './components/Navigation/Navigation';
 import { MySelf } from './components/MySelf/MySelf';
 import { Experience } from './components/Experience/Experience';
@@ -98,10 +99,12 @@ const App: React.FC = () => {
         <div className="App">
             <Navigation />
             <main>
-                <MySelf personalInfo={mockPersonalInfo} />
-                <Experience experiences={mockExperiences} />
-                <ProjectsGrid projects={sampleProjects} title="Mes Projets Récents" />
-                <MyContact contactInfo={mockContactInfo} />
+                <Routes>
+                    <Route path="/" element={<MySelf personalInfo={mockPersonalInfo} />} />
+                    <Route path="/experience" element={<Experience experiences={mockExperiences} />} />
+                    <Route path="/projects" element={<ProjectsGrid projects={sampleProjects} title="Mes Projets Récents" />} />
+                    <Route path="/contact" element={<MyContact contactInfo={mockContactInfo} />} />
+                </Routes>
             </main>
         </div>
     );
