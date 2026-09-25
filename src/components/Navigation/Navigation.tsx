@@ -10,7 +10,7 @@ export const Navigation: React.FC = () => {
         <nav className="navigation">
             <ul>
                 <li>
-                    <button onClick={() => scrollToSection('myself')}>My Self</button>
+                    <button onClick={() => scrollToSection('myself')}>À propos de moi</button>
                 </li>
                 <li>
                     <button onClick={() => scrollToSection('experience')}>Experience</button>

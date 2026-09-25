@@ -10,11 +10,27 @@ import './styles/portfolio.css';
 
 const mockPersonalInfo: PersonalInfo = {
     name: "Titien Carellas",
-    title: "Développeur Full Stack",
-    bio: "Développeur polyvalent avec une expertise en C/C++ et C#, j'all i la rigueur de la formation Epitech à ma passion pour le jeu vidéo mobile. " +
-        "Mon parcours est jalonné de projets divers — applications web, moteurs de jeu et algorithmes mathématiques — " +
-        "ainsi que de compétitions type Hackathons et Jams. " +
-        "Cette curiosité technique me permet aujourd'hui d'intervenir sur des problématiques variées avec une vision globale du développement.",
+    title: "Développeur Jeux Video et IA",
+    bio: ["Développeur polyvalent, principalement spécialisé en C/C++ et C#,",
+        "je combine la rigueur acquise lors de ma formation à Epitech avec une véritable passion pour le développement," +
+        " l'IA et le jeu vidéo mobile.",
+        "Curieux et attiré par les nouvelles technologies, " +
+        "je m’intéresse particulièrement à l’intelligence artificielle, au machine learning et au deep learning," +
+        " des domaines dans lesquels j’ai eu l’occasion de réaliser plusieurs projets et d’approfondir mes connaissances." +
+        " J’ai notamment effectué un stage chez Icare Énergie, " +
+        "au cours duquel j’ai travaillé sur des problématiques liées à l’intelligence artificielle.",
+        " Cette expérience m’a permis de confronter mes connaissances théoriques à des problématiques concrètes et" +
+        " de mieux comprendre les enjeux liés à l’utilisation de l’IA dans un contexte professionnel et écologique." ,
+        " Mon parcours m’a également permis de travailler sur des projets variés, " +
+        "allant du développement d’applications web à la création de moteurs de jeu, " +
+        "en passant par la conception d’algorithmes et la résolution de problématiques mathématiques. " ,
+        "J’ai aussi eu l’occasion de mettre mes compétences à l’épreuve lors de hackathons et de game jams, " +
+        "des expériences qui m’ont appris à être rapidement autonome," +
+        " à expérimenter et à trouver des solutions dans des contextes exigeants." ,
+        "J’aime avant tout comprendre comment les technologies fonctionnent, expérimenter et transformer des idées en projets concrets." +
+        " Cette curiosité me permet aujourd’hui d’aborder des problématiques variées avec une vision globale du développement," +
+        " tout en continuant à explorer les domaines qui me passionnent, notamment le jeu vidéo et l’intelligence artificielle."
+        ],
     skills: ["C/C++/C#\t", "TypeScript\t", "Python\t", "Unity/Unreal Engine\t"]
 };
 
