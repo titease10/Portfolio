@@ -1,12 +1,12 @@
 import type { Project } from '../../types/Project';
-import Poster_EIP from "../../assets/images/EIP_Poster.png";
+import Poster_EIP from "../../assets/images/EIP_Poster.jpg";
 import AREA_IFTTT from "../../assets/images/AREA_IFTTT.png";
 import Computer_Analyse from "../../assets/images/code.png";
 import Machine_Learning from "../../assets/images/Machine_Learning.png";
 
 export const sampleProjects: Project[] = [
     {
-        id: "Harmony Havoc",
+        id: "Harmony_Havoc",
         title: "Harmony Havoc",
         description: "Un jeux-vidéo de rythme intégrant des aspects de Stratégie/RPG. \n" +
             "Ce jeu s’adresse à tous les joueurs recherchant une expérience alliant réflexes et tactiques.\n" +
@@ -36,17 +36,16 @@ export const sampleProjects: Project[] = [
         technologies: ["React ", "TypeScripts ", " API"],
     },
     {
-        id: "COMPUTER NUMERICAL ANALYSIS",
+        id: "COMPUTER_NUMERICAL_ANALYSIS",
         title: "COMPUTER NUMERICAL ANALYSIS",
-        description: "Divert project: graphique annalyse, cryptography,\n" +
-            "réseau neuronal",
+        description: "Divert project: graphique annalyse, cryptography, réseau neuronal",
         imageUrl: Computer_Analyse,
         githubUrl: "https://github.com/titease10/Computer_Numerical_Analysis_Maths",
         canvaUrl: "https://canva.link/ptptw430px5n8zz",
         technologies: ["C++ ", "Python "],
     },
     {
-        id: "MACHINE LEARNING",
+        id: "MACHINE_LEARNING",
         title: "MACHINE LEARNING",
         description: "creation du divert model d'IA : Classification , Regression, Clustering\n" +
             "objectif d’explorer et de comparer différentes approches d’apprentissage automatique à travers plusieurs problématiques concrètes.\n" +
