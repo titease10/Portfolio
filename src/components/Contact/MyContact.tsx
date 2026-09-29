@@ -10,7 +10,7 @@ interface MyContactProps {
 export const MyContact: React.FC<MyContactProps> = ({ contactInfo }) => {
     return (
         <section id="contact" className="section">
-            <h2>Contact Me</h2>
+            <h2>Mes contacts</h2>
             <div className="contact-info">
                 <div className="contact-item">
                     <strong>Email:</strong>

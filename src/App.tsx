@@ -103,7 +103,7 @@ const App: React.FC = () => {
                 <Routes>
                     <Route path="/" element={<MySelf personalInfo={mockPersonalInfo} />} />
                     <Route path="/experience" element={<Experience experiences={mockExperiences} />} />
-                    <Route path="/projects" element={<ProjectsGrid projects={sampleProjects} title="Mes Projets Récents" />} />
+                    <Route path="/projects" element={<ProjectsGrid projects={sampleProjects} title="Mes projets récents" />} />
                     <Route path="/projects/:id" element={<ProjectDetail projects={sampleProjects} />} />
                     <Route path="/contact" element={<MyContact contactInfo={mockContactInfo} />} />
                 </Routes>

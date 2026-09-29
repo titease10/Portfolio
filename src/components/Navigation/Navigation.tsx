@@ -6,16 +6,16 @@ export const Navigation: React.FC = () => {
         <nav className="navigation">
             <ul>
                 <li>
-                    <NavLink to="/" end>My Self</NavLink>
+                    <NavLink to="/" end>Profil</NavLink>
                 </li>
                 <li>
                     <NavLink to="/experience">Experience</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/projects">Projects</NavLink>
+                    <NavLink to="/projects">Projets</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to="/contact">Contacts</NavLink>
                 </li>
             </ul>
         </nav>
