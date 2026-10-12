@@ -1,8 +1,8 @@
-import type { Project } from '../../types/Project';
-import Poster_EIP from "../../assets/images/EIP_Poster.jpg";
-import AREA_IFTTT from "../../assets/images/AREA_IFTTT.png";
-import Computer_Analyse from "../../assets/images/code.png";
-import Machine_Learning from "../../assets/images/Machine_Learning.png";
+import type { Project } from '../types/Project';
+import Poster_EIP from "../assets/images/EIP_Poster.jpg";
+import AREA_IFTTT from "../assets/images/AREA_IFTTT.png";
+import Computer_Analyse from "../assets/images/code.png";
+import Machine_Learning from "../assets/images/Machine_Learning.png";
 
 export const sampleProjects: Project[] = [
     {
